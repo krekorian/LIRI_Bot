@@ -31,10 +31,9 @@ switch (argOne) {
         break;
     case "do-what-it-says":
 
-
-
-        console.log("Arg two:" + argTwo);
-        // spotifyfunc(argTwo);
+        var data = fs.readFileSync('random.txt');
+        console.log("Arg two:" + data);
+        spotifyfunc(data);
         break;
 
 
@@ -149,24 +148,6 @@ function concertfinder(argTwo) {
             console.log(error.config);
         });
 
-}
-
-
-function readFromFile() {
-    fs.readFilesync("random.txt", "utf8", function (error, data) {
-
-        // If the code experiences any errors it will log the error to the console.
-        if (error) {
-            return console.log(error);
-        }
-
-        // We will then print the contents of data
-        console.log(data);
-
-
-
-    });
-    return (data);
 }
 
 
