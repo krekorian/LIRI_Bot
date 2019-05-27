@@ -9,7 +9,7 @@ Liri Bot takes certain commands, if the incorrect command is entered the system 
 Concert this looks for concerts fora certain artist or band, gives back venue name, location, and the date of the event.
 Commend for concert-this should be enetered as following
 
-node concert-this <artist or band name>
+node app.js concert-this "artist or band name"
 
 Example: node app.js concert-this "Mark Anthony"
 
@@ -17,14 +17,16 @@ Example: node app.js concert-this "Mark Anthony"
 spotify-this-song look for a song, it will display singer or band's name, song's album, and a URL link for spotify.
 Commend for spotify-this-song should be enetered as following
 
-node app.js spotify-this-song <Song name>
+node app.js spotify-this-song "Song name"
+
 Example: node app.js spotify-this-song "desert rose"
 
 ### Movie-this
 Movie-this will query the information for a certain movie, it will preview year it came out, IMBD rating, Rotten Tomatoes rating, country of production, language availability, movie's plot and artist.
 Commend for spotify-this-song should be enetered as following
 
- node app.js movie-this <movie name>
+node app.js movie-this "movie name"
+
 Example: node app.js movie-this "minority report"
 
 ### do-what-it-says
