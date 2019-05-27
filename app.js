@@ -7,7 +7,7 @@ var keys = require("./keys.js");
 var spotify = new Spotify(keys.spotify);
 var argOne = process.argv[2];
 var argTwo = process.argv[3];
-console.log(argOne, argTwo);
+
 switch (argOne) {
     case "concert-this":
         concertfinder(argTwo);
@@ -70,7 +70,7 @@ function findmovie(argTwo) {
     console.log("_______________________________________");
     var array = argTwo.split(" ");
     var searchName = array.join("+");
-    console.log(searchName);
+
     axios
         .get("http://www.omdbapi.com/?t=" + searchName + "&apikey=dbb2f869")
         .then(function (response) {
@@ -116,7 +116,7 @@ function concertfinder(argTwo) {
     var searchName = array.join("");
     // console.log(searchName);
     axios
-        .get("https://rest.bandsintown.com/artists/" + argTwo + "/events?app_id=codingbootcamp")
+        .get("https://rest.bandsintown.com/artists/" + searchName + "/events?app_id=codingbootcamp")
         .then(function (response) {
             // If the axios was successful...
             // Then log the body from the site!
