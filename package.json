@@ -19,7 +19,7 @@
   "homepage": "https://github.com/krekorian/LIRI_Bot#readme",
   "dependencies": {
     "axios": "^0.18.0",
-    "moment": "^2.24.0",
+    "moment": "^2.29.2",
     "node-spotify-api": "^1.1.1",
     "promise": "^8.0.3",
     "request": "^2.88.0"
